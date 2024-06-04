@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator
     </title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="calculator">
-        <input  id="display">
+
+<body> 
+    <div id="calculator" >
+        <input id="display">
         <div id="keys">
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
@@ -31,38 +33,38 @@
         </div>
 
     </div>
-    <script  >
-       const display=document.getElementById('display')
-// const display = document.querySelector('#display')
+    <script>
+        const display = document.getElementById('display')
+        // const display = document.querySelector('#display')
 
 
 
 
 
-function appendToDisplay(input){
-    display.value += input;
-    // console.log(input);
-}
+        function appendToDisplay(input) {
+            display.value += input;
+            // console.log(input);
+        }
 
 
-function clearscreen(){
-    display.value = "";
-}
-function calculate(){
-    try{
-        display.value=eval(display.value);
-    }
-    catch(error)
-    {
-        display.value=("error hai");
-        // console.log("error")
-    }
+        function clearscreen() {
+            display.value = "";
+        }
+        function calculate() {
+            try {
+                display.value = eval(display.value);
+            }
+            catch (error) {
+                display.value = ("error hai");
+                // console.log("error")
+            }
 
 
-}
+        }
 
 
 
     </script>
 </body>
+
 </html>

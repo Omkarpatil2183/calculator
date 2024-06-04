@@ -21,6 +21,12 @@ button{
     background-color: wheat;
     border-radius: 10%;
     max-width: 500px;
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    margin-left: 500px;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
 }
 #display{
@@ -34,12 +40,8 @@ button{
 
 }
 body{
-    margin: 0;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: azure;
+    margin: 2;
+    /* background-color: azure; */
 
 }
 button:hover{
